@@ -1,0 +1,68 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwdrlo673vead"]
+
+[ext_resource type="Script" path="res://scenes/credits/credits.gd" id="1_27mye"]
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_27mye")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -143.5
+offset_top = -101.0
+offset_right = 143.5
+offset_bottom = 101.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Well, a woman who'll kiss on the very first date
+Is usually a hussy
+And a woman who'll kiss on the second time out
+Is anything but fussy
+But a woman who'll wait till the third time around
+Head in the clouds, feet on the ground
+She's the girl you're glad you found
+She's your shipoopi
+Shipoopi, shipoopi, shipoopi
+The girl who's hard to get
+Shipoopi, shipoopi, shipoopi
+But you can win her yet"
+horizontal_alignment = 1
+
+[node name="ButtonContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = -288.0
+offset_right = 103.0
+offset_bottom = -167.0
+grow_vertical = 0
+scale = Vector2(2, 2)
+theme_override_constants/separation = 14
+
+[node name="BtnPlaceholder1" type="Button" parent="ButtonContainer"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+text = "PH1"
+
+[node name="BtnBack" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+text = "Back"
+
+[node name="BtnPlaceholder2" type="Button" parent="ButtonContainer"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+text = "PH2"
+
+[connection signal="pressed" from="ButtonContainer/BtnBack" to="." method="_on_btn_back_pressed"]

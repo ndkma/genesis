@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://bb47wfstvai8n"]
+
+[ext_resource type="Script" path="res://scenes/main_menu/main_menu.gd" id="1_0aanq"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0aanq")
+
+[node name="ButtonContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+offset_left = 40.0
+offset_top = 360.0
+offset_right = 103.0
+offset_bottom = 481.0
+scale = Vector2(2, 2)
+theme_override_constants/separation = 14
+
+[node name="BtnPlay" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+text = "Play"
+
+[node name="BtnCredits" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+text = "Credits"
+
+[node name="BtnQuit" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="ButtonContainer/BtnPlay" to="." method="_on_btn_play_pressed"]
+[connection signal="pressed" from="ButtonContainer/BtnCredits" to="." method="_on_btn_credits_pressed"]
+[connection signal="pressed" from="ButtonContainer/BtnQuit" to="." method="_on_btn_quit_pressed"]
