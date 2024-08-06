@@ -1,8 +1,2 @@
-res://scenes/main_menu/main_menu.tscn
-res://scenes/credits/credits.tscn
-res://scenes/game_level_one/game_level_one.tscn
-res://scenes/main_menu/main_menu.gd
-res://singletons/level_manager.gd
-res://scenes/credits/credits.gd
 res://scenes/player/player.tscn
 res://scenes/player/player.gd

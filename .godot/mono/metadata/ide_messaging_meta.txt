@@ -1,0 +1,2 @@
+﻿46077
+/snap/gd-godot-engine-snapcraft/34/godot-engine/godot-engine

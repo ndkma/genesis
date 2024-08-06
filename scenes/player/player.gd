@@ -1,12 +1,12 @@
 extends CharacterBody2D
 
 @export var speed = 400
-@onready var animated_sprite_2d = $AnimatedSprite2D
+@onready var plane_move_anim = $AnimatedSprite2D
 @onready var audio_stream_player_2d = $AudioStreamPlayer2D
 
 
 func _ready():
-	animated_sprite_2d.play("side")
+	plane_move_anim.play("side")
 	audio_stream_player_2d.play()
 
 func get_input():
@@ -15,11 +15,11 @@ func get_input():
 	
 	# Animation
 	if input_direction.x > 0:
-		animated_sprite_2d.flip_h = false
-		animated_sprite_2d.play("side")
+		plane_move_anim.flip_h = false
+		plane_move_anim.play("side")
 	elif input_direction.x < 0:
-		animated_sprite_2d.flip_h = true
-		animated_sprite_2d.play("side")
+		plane_move_anim.flip_h = true
+		plane_move_anim.play("side")
 
 func _physics_process(delta):
 	get_input()
