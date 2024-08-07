@@ -2,12 +2,12 @@ extends CharacterBody2D
 
 @export var speed = 400
 @onready var plane_move_anim = $AnimatedSprite2D
-@onready var audio_stream_player_2d = $AudioStreamPlayer2D
+@onready var engine_audio = $AudioStreamPlayer2D
 
 
 func _ready():
 	plane_move_anim.play("side")
-	audio_stream_player_2d.play()
+	engine_audio.play()
 
 func get_input():
 	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")

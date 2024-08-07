@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1722965766
+::res://::1723001235
 icon.svg::CompressedTexture2D::4304068152791248599::1721639928::1722961204::1::::<><>::
 README.md::TextFile::-1::1722964371::0::1::::<><>::
 ::res://assets/::1722957092
@@ -19,8 +19,8 @@ game_level_one.tscn::PackedScene::6463326368743287995::1722956701::0::1::::<><>:
 ::res://scenes/main_menu/::1722957467
 main_menu.gd::GDScript::-1::1722957467::0::1::::<>Control<>::
 main_menu.tscn::PackedScene::2518459004747878207::1722956701::0::1::::<><>::res://scenes/main_menu/main_menu.gd
-::res://scenes/player/::1722963057
-player.gd::GDScript::-1::1722961365::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::8967474289786919252::1722963057::0::1::::<><>::res://scenes/player/player.gd<>uid://27t3rwfy4k2j::::res://assets/plane/planes_sheet.png<>uid://buwknoynihbk1::::res://assets/audio/engine.mp3
+::res://scenes/player/::1722966502
+player.gd::GDScript::-1::1722966040::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::8967474289786919252::1722966502::0::1::::<><>::res://scenes/player/player.gd<>uid://27t3rwfy4k2j::::res://assets/plane/planes_sheet.png<>uid://buwknoynihbk1::::res://assets/audio/engine.mp3
 ::res://singletons/::1722956692
 level_manager.gd::GDScript::-1::1722956692::0::1::::<>Node<>::
