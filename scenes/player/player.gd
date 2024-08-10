@@ -8,6 +8,7 @@ extends CharacterBody2D
 func _ready():
 	plane_move_anim.play("side")
 	engine_audio.play()
+	SignalManager.player_hit_by_meteor.connect(Callable(self, "die"))
 
 func get_input():
 	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
@@ -24,3 +25,10 @@ func get_input():
 func _physics_process(delta):
 	get_input()
 	move_and_slide()
+	
+func die() -> void:
+	set_physics_process(false)
+	plane_move_anim.stop()
+	engine_audio.stop()
+	SignalManager.game_ended.emit()
+	

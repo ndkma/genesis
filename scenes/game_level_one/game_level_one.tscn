@@ -1,3 +1,18 @@
-[gd_scene format=3 uid="uid://cyc5bnnbu3p5d"]
+[gd_scene load_steps=5 format=3 uid="uid://cyc5bnnbu3p5d"]
+
+[ext_resource type="PackedScene" uid="uid://d0058ybsakpu7" path="res://scenes/player/player.tscn" id="1_stp4p"]
+[ext_resource type="Script" path="res://scenes/game_level_one/game_level_one.gd" id="1_ta56q"]
+[ext_resource type="PackedScene" uid="uid://b40h3vbe6yo01" path="res://scenes/meteor/meteor.tscn" id="2_r5x07"]
+[ext_resource type="PackedScene" uid="uid://cq8blmx0rsvc7" path="res://scenes/spawner/spawner.tscn" id="4_qra4e"]
 
 [node name="GameLevelOne" type="Node2D"]
+script = ExtResource("1_ta56q")
+
+[node name="Player" parent="." instance=ExtResource("1_stp4p")]
+position = Vector2(175, 252)
+
+[node name="Meteor" parent="." instance=ExtResource("2_r5x07")]
+position = Vector2(218, 132)
+
+[node name="Spawner" parent="." instance=ExtResource("4_qra4e")]
+position = Vector2(81, 82)

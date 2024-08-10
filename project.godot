@@ -15,6 +15,11 @@ run/main_scene="res://scenes/main_menu/main_menu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+LevelManager="*res://singletons/level_manager.gd"
+SignalManager="*res://singletons/signal_manager.gd"
+
 [dotnet]
 
 project/assembly_name="Genesis"

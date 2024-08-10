@@ -1,3 +1,8 @@
+res://scenes/spawner
+res://scenes/game_ui/game_over
+res://scenes/game_ui
+res://singletons
+res://scenes/meteor
 res://scenes/player
 res://assets/plane
 res://scenes/game_level_one
