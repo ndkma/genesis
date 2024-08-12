@@ -12,3 +12,6 @@ func _on_body_entered(body):
 func _process(delta: float) -> void:
 	position += direction.normalized() * speed * delta
 
+func _on_screen_exited():
+	queue_free()
+	print("dead meteor")

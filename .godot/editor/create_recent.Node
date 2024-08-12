@@ -1,3 +1,4 @@
+VisibleOnScreenNotifier2D
 Node2D
 Timer
 Panel
@@ -12,4 +13,3 @@ Marker2D
 TileMap
 AudioStreamPlayer2D
 CharacterBody2D
-AnimationPlayer

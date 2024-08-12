@@ -20,6 +20,10 @@ config/icon="res://icon.svg"
 LevelManager="*res://singletons/level_manager.gd"
 SignalManager="*res://singletons/signal_manager.gd"
 
+[display]
+
+window/size/resizable=false
+
 [dotnet]
 
 project/assembly_name="Genesis"
