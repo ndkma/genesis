@@ -5,7 +5,7 @@ const GAME_OVER = preload("res://scenes/game_ui/game_over/game_over.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	SignalManager.game_ended.connect(Callable(self, "show_game_over"))
-
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
@@ -16,3 +16,6 @@ func show_game_over():
 	await get_tree().create_timer(3).timeout
 	get_tree().change_scene_to_file(LevelManager.MAIN_MENU_SCENE)
 	
+
+func _on_timer_timeout():
+	print("total current meteors: ", $Spawner.get_child_count())

@@ -4,3 +4,6 @@ res://scenes/meteor/meteor.tscn
 res://scenes/player/player.tscn
 res://scenes/spawner/spawner.tscn
 res://scenes/meteor/meteor.gd
+res://scenes/experimental/game_experimental_level.tscn
+res://scenes/experimental/game_experimental_level.gd
+res://scenes/game_level_one/game_level_one.gd
